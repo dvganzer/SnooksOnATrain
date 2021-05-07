@@ -7,7 +7,7 @@ public class Guard : MonoBehaviour
 {
     public float pointA;
     public float pointB;
-    public GameObject guard;
+    public Rigidbody2D guard;
     public float speed;
     public float counter = 0;
 
@@ -25,19 +25,11 @@ public class Guard : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, 2);
-        if (hit.collider)
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, 2, 8);
+        if (hit.collider != null)
         {
-            Debug.Log("Hit");
-            string obj = hit.collider.name;
-            if(obj == "Player")
-            {
-                SceneManager.LoadScene("Caught");
-                Debug.Log("YOU CRAZY SON OF A BITCH!!");
-            }
+            Debug.Log("ITWORKED!!!");
         }
-
-
         //Raycating
         if(lookRight == true)
         {
@@ -58,7 +50,7 @@ public class Guard : MonoBehaviour
         
         if (stopped == false)
         {
-            transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+            guard.velocity = new Vector3(speed, 0,0);
         }
         
 
