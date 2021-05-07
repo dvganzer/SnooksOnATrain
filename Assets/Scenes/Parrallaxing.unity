@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3720,6 +3720,7 @@ GameObject:
   - component: {fileID: 249799676}
   - component: {fileID: 249799675}
   - component: {fileID: 249799674}
+  - component: {fileID: 249799677}
   m_Layer: 0
   m_Name: Snake (1)
   m_TagString: Untagged
@@ -3826,6 +3827,22 @@ Transform:
   m_Father: {fileID: 998471991}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &249799677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249799673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1569125451d06724db4e15848ec90348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plyr: {fileID: 264805893}
+  target: {x: 0, y: 0}
+  boxcollider: {fileID: 1873605143}
+  speed: 1
 --- !u!1 &264805893
 GameObject:
   m_ObjectHideFlags: 0
@@ -20296,6 +20313,7 @@ GameObject:
   - component: {fileID: 1418669905}
   - component: {fileID: 1418669904}
   - component: {fileID: 1418669903}
+  - component: {fileID: 1418669906}
   m_Layer: 0
   m_Name: Snake (2)
   m_TagString: Untagged
@@ -20402,6 +20420,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1418669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1569125451d06724db4e15848ec90348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plyr: {fileID: 264805893}
+  target: {x: 0, y: 0}
+  boxcollider: {fileID: 1418669903}
+  speed: 1
 --- !u!1 &1419841575
 GameObject:
   m_ObjectHideFlags: 0
@@ -24700,6 +24734,7 @@ GameObject:
   - component: {fileID: 1660868962}
   - component: {fileID: 1660868961}
   - component: {fileID: 1660868960}
+  - component: {fileID: 1660868963}
   m_Layer: 0
   m_Name: Snake (4)
   m_TagString: Untagged
@@ -24806,6 +24841,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1660868963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660868959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1569125451d06724db4e15848ec90348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plyr: {fileID: 264805893}
+  target: {x: 0, y: 0}
+  boxcollider: {fileID: 1660868960}
+  speed: 1
 --- !u!1 &1661902623
 GameObject:
   m_ObjectHideFlags: 0
@@ -26891,6 +26942,7 @@ GameObject:
   - component: {fileID: 1800960396}
   - component: {fileID: 1800960395}
   - component: {fileID: 1800960394}
+  - component: {fileID: 1800960397}
   m_Layer: 0
   m_Name: Snake (3)
   m_TagString: Untagged
@@ -26997,6 +27049,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1800960397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800960393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1569125451d06724db4e15848ec90348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plyr: {fileID: 264805893}
+  target: {x: 0, y: 0}
+  boxcollider: {fileID: 1800960394}
+  speed: 1
 --- !u!1 &1807724085
 GameObject:
   m_ObjectHideFlags: 0
@@ -27714,6 +27782,7 @@ GameObject:
   - component: {fileID: 1873605145}
   - component: {fileID: 1873605144}
   - component: {fileID: 1873605143}
+  - component: {fileID: 1873605146}
   m_Layer: 0
   m_Name: Snake (1)
   m_TagString: Untagged
@@ -27820,6 +27889,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1873605146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873605142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1569125451d06724db4e15848ec90348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plyr: {fileID: 264805893}
+  target: {x: 0, y: 0}
+  boxcollider: {fileID: 249799674}
+  speed: 1
 --- !u!1001 &1880170506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29134,6 +29219,7 @@ GameObject:
   - component: {fileID: 1968864235}
   - component: {fileID: 1968864234}
   - component: {fileID: 1968864233}
+  - component: {fileID: 1968864236}
   m_Layer: 0
   m_Name: Snake (5)
   m_TagString: Untagged
@@ -29240,6 +29326,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1968864236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968864232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1569125451d06724db4e15848ec90348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plyr: {fileID: 264805893}
+  target: {x: 0, y: 0}
+  boxcollider: {fileID: 1968864233}
+  speed: 1
 --- !u!1 &1972204862
 GameObject:
   m_ObjectHideFlags: 0
@@ -29544,6 +29646,7 @@ GameObject:
   - component: {fileID: 2012846324}
   - component: {fileID: 2012846323}
   - component: {fileID: 2012846322}
+  - component: {fileID: 2012846325}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Untagged
@@ -29650,6 +29753,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2012846325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012846321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1569125451d06724db4e15848ec90348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plyr: {fileID: 264805893}
+  target: {x: 0, y: 0}
+  boxcollider: {fileID: 2012846322}
+  speed: 1
 --- !u!1 &2015737767
 GameObject:
   m_ObjectHideFlags: 0
