@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Valuables : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Vector2 floatY;
+    float originalY;
+    public float FloatStrength;
     void Start()
     {
-        
+        this.originalY = this.transform.position.y;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        floatY = transform.position;
+        floatY.y = originalY + (Mathf.Sin(Time.time) * FloatStrength);
+        transform.position = floatY;
     }
 }

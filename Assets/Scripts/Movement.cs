@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float speed = 10f;
-    public float jumpVelocity = 9f;
+    public float jumpVelocity = 7f;
     public Rigidbody2D rb;
     Vector2 move;
     public Animator animator;
@@ -55,7 +55,7 @@ public class Movement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-       rb.AddForce(move * speed);
+       rb.AddRelativeForce(move * speed);
     }
 
     private bool IsGrounded()
