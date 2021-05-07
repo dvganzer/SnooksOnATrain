@@ -32,7 +32,7 @@ public class Guard : MonoBehaviour
             string obj = hit.collider.name;
             if(obj == "Player")
             {
-                SceneManager.LoadScene("Caught");
+                SceneManager.LoadScene("GameOver");
                 Debug.Log("YOU CRAZY SON OF A BITCH!!");
             }
         }
