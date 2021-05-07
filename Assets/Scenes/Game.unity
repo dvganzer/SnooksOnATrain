@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -738,6 +738,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030392974}
   - component: {fileID: 1030392973}
+  - component: {fileID: 1030392975}
   m_Layer: 0
   m_Name: SnakesDoorC (1)
   m_TagString: Untagged
@@ -803,12 +804,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030392972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.26, y: 3.69, z: 0}
+  m_LocalPosition: {x: 8.31, y: 3.69, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1030392975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030392972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3075582c26a084da5d536d2183f869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointA: 8
+  pointB: 12
+  guard: {fileID: 1030392972}
+  speed: 0.5
+  counter: 0
+  yot: {fileID: 1030392973}
 --- !u!1 &1178269997
 GameObject:
   m_ObjectHideFlags: 0
