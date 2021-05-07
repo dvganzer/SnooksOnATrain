@@ -1075,6 +1075,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  cash: {fileID: 0}
 --- !u!82 &264805899
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1212,6 +1213,7 @@ MonoBehaviour:
   Score: 0
   playerScore: {fileID: 895868051}
   collected: {fileID: 1075494376}
+  hurt: {fileID: 0}
 --- !u!1 &279774365
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,7 +2545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578098753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.255001, y: 1.45, z: -16.39}
+  m_LocalPosition: {x: 24.45, y: 1.45, z: -16.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1399075146}
