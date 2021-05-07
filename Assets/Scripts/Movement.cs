@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     public GameObject ladder;
     private BoxCollider2D boxcollider;
     [SerializeField] private LayerMask layerMask;
+    public AudioSource cash;
    
     void Update()
     {
@@ -69,6 +70,7 @@ public class Movement : MonoBehaviour
         if (collision.gameObject == ladder)
         {
             jumpVelocity = 14f;
+            cash.Stop();
         }
         else if(collision.gameObject != ladder)
         {
