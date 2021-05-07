@@ -25,11 +25,18 @@ public class Guard : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+<<<<<<< Updated upstream
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, 2, 8);
         if (hit.collider != null)
         {
             Debug.Log("ITWORKED!!!");
         }
+=======
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, 2);
+        
+
+
+>>>>>>> Stashed changes
         //Raycating
         if(lookRight == true)
         {
@@ -86,5 +93,13 @@ public class Guard : MonoBehaviour
         
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.name == "Player")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+
+
 }
