@@ -52,7 +52,7 @@ public class Movement : MonoBehaviour
             rb.velocity =  Vector2.up * jumpVelocity;
             Debug.Log("Jump");
         }
-       
+        
     }
     private void FixedUpdate()
     {
@@ -72,10 +72,10 @@ public class Movement : MonoBehaviour
             jumpVelocity = 14f;
             cash.Stop();
         }
-        else if(collision.gameObject != ladder)
-        {
-            jumpVelocity = 9f;
-        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        jumpVelocity = 9f;
     }
 
 

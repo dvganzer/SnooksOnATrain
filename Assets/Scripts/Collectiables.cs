@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Collectiables : MonoBehaviour
 {
@@ -65,6 +66,7 @@ public class Collectiables : MonoBehaviour
             Destroy(collision.gameObject);
             Debug.Log(Score);
             collected.Play();
+            SceneManager.LoadScene("GameWin");
         }
         if (collision.gameObject.name == "Snake")
         {
