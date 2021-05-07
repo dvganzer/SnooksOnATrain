@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Parrallaxing.unity
     guid: 4e29353fe43f66e43900ed99a2a569c9
+  - enabled: 1
+    path: Assets/Scenes/GameWin.unity
+    guid: 73ef3806d69214fdc90295d2b1b70dd1
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 55448c285038b4a8894750726b9e3bd0
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 913753376ce63054690cc98931ba6472
   m_configObjects: {}

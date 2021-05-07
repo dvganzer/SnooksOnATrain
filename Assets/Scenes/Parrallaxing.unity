@@ -3730,7 +3730,7 @@ GameObject:
   - component: {fileID: 249799674}
   - component: {fileID: 249799677}
   m_Layer: 0
-  m_Name: Snake (1)
+  m_Name: Snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21111,7 +21111,7 @@ GameObject:
   - component: {fileID: 1418669903}
   - component: {fileID: 1418669906}
   m_Layer: 0
-  m_Name: Snake (2)
+  m_Name: Snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25916,7 +25916,7 @@ GameObject:
   - component: {fileID: 1660868960}
   - component: {fileID: 1660868963}
   m_Layer: 0
-  m_Name: Snake (4)
+  m_Name: Snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28232,7 +28232,7 @@ GameObject:
   - component: {fileID: 1800960394}
   - component: {fileID: 1800960397}
   m_Layer: 0
-  m_Name: Snake (3)
+  m_Name: Snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29050,7 +29050,7 @@ GameObject:
   - component: {fileID: 1873605143}
   - component: {fileID: 1873605146}
   m_Layer: 0
-  m_Name: Snake (1)
+  m_Name: Snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30487,7 +30487,7 @@ GameObject:
   - component: {fileID: 1968864233}
   - component: {fileID: 1968864236}
   m_Layer: 0
-  m_Name: Snake (5)
+  m_Name: Snake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
