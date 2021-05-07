@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class Snek : MonoBehaviour
 {
-    public Rigidbody2D slitherySnek;
+    private Rigidbody2D slitherySnek;
     public GameObject Plyr;
     public Vector2 target;
-    public BoxCollider2D boxcollider;
+    public PolygonCollider2D boxcollider;
 
     public float speed;
+
+    private void Start()
+    {
+        slitherySnek= this.gameObject.GetComponent<Rigidbody2D>();
+    }
+
 
     // Start is called before the first frame update
     private bool IsGrounded()
@@ -39,8 +45,8 @@ public class Snek : MonoBehaviour
             slitherySnek.velocity = new Vector2(-7, 0);
         }
 
-
-        if(slitherySnek.velocity.y > .5f)
+        //Gravity
+        if(slitherySnek.velocity.y > 0)
         {
             slitherySnek.velocity = new Vector2(0, -.5f);
         }
